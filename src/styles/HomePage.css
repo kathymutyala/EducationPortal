@@ -1,0 +1,32 @@
+/* HomePage.css */
+
+.home {
+    text-align: center; /* Center the text and image */
+    padding: 20px; /* Add some padding */
+}
+
+.header {
+    margin-bottom: 20px; /* Space between header and image */
+}
+
+.home-image {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for the image */
+    margin: 20px 0; /* Add space around the image */
+}
+
+/* .explore-button {
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    color: white; 
+    background-color: #3498db; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}  */
+
+/* .explore-button:hover {
+    background-color: #2980b9; 
+}  */

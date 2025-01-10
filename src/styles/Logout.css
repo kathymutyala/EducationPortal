@@ -1,0 +1,35 @@
+.logout {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    text-align: center; /* Center the text */
+    background-color: #f7f7f7; /* Light background color */
+    padding: 20px; /* Padding around the content */
+}
+
+.logout h2 {
+    color: #3498db; /* Primary color for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.logout p {
+    margin-bottom: 20px; /* Space below the paragraph */
+    color: #555; /* Darker gray for the paragraph */
+}
+
+.logout-button {
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1rem; /* Font size */
+    color: white; /* Text color */
+    background-color: #e74c3c; /* Button color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.logout-button:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+}

@@ -1,0 +1,156 @@
+/* Header container */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #2c3e50; /* Dark blue background */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better separation */
+}
+
+/* Logo section */
+.logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Navigation styles */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual list items */
+.nav-links li {
+    display: inline;
+}
+
+/* Link styles */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 10px; /* Added padding for clickable area */
+    border-radius: 4px; /* Rounded edges */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+    background-color: #3498db; /* Light blue background on hover */
+    color: white; /* Keep text color white on hover */
+}
+
+/* Logout button styles */
+.logout-btn {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor for button */
+    font-size: 1.2rem; /* Same font size as links */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.logout-btn:hover {
+    color: #e74c3c; /* Red color on hover for logout button */
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px; /* Adjusted padding for smaller screens */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px; /* Space between links in mobile view */
+        padding-top: 10px; /* Space at the top of the nav links */
+        width: 100%; /* Full width for better alignment */
+    }
+
+    .nav-links li {
+        width: 100%; /* Make list items full-width */
+    }
+
+    .nav-links a {
+        display: block; /* Full width clickable links */
+        text-align: left; /* Align text to the left */
+        padding: 10px; /* Increase padding for better touch targets */
+    }
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-title {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .dropdown-title::after {
+    content: "▼"; /* Adds a downward arrow to indicate dropdown */
+    font-size: 0.8rem;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+  }
+  
+  .dropdown-content li {
+    padding: 10px;
+  }
+  
+  .dropdown-content li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+    
+/* Improved styling for smaller screens */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.5rem; /* Smaller logo on very small screens */
+    }
+
+    .nav-links a {
+        font-size: 1rem; /* Smaller font for links */
+        padding: 10px; /* Increased padding for touch targets */
+    }
+}

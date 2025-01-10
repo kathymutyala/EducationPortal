@@ -1,0 +1,67 @@
+.signup {
+    max-width: 400px; /* Maximum width for the signup form */
+    margin: 60px auto; /* Center the form vertically and horizontally */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font style */
+    position: relative; /* Allows back-link to position itself within the card */
+}
+
+.signup-title {
+    text-align: center;
+    color: #2c3e50; /* Dark color for title */
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between input fields */
+}
+
+.signup-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #bdc3c7; /* Light border */
+    border-radius: 4px; /* Rounded corners for input fields */
+    transition: border-color 0.3s ease;
+}
+
+.signup-input:focus {
+    border-color: #3498db; /* Highlight border on focus */
+    outline: none; /* Remove outline */
+}
+
+.signup-button {
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #3498db; /* Primary blue color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.signup-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+.back-link {
+    position: absolute;
+    top: 20px; /* Slightly above the card */
+    left: 20px; /* Slightly to the left of the card */
+    font-size: 14px; /* Maintain smaller font size */
+    text-decoration: none; /* Remove underline */
+    color: #3498db; /* Consistent blue theme */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s; /* Smooth hover effect */
+}
+
+.back-link:hover {
+    color: #2980b9; /* Darker blue on hover */
+    transform: translateX(-2px); /* Slight horizontal shift on hover */
+}

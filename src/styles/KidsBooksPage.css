@@ -1,0 +1,14 @@
+.read-book-button {
+    display: inline-block;
+    padding: 8px 12px;          /* Padding for button */
+    background-color: #007BFF;  /* Blue background */
+    color: white;                /* White text */
+    text-decoration: none;       /* Remove underline */
+    border-radius: 4px;         /* Slightly rounded corners */
+    border: none;                /* No border */
+    font-size: 14px;            /* Font size */
+}
+
+.read-book-button:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
